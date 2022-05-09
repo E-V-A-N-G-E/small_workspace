@@ -1,5 +1,7 @@
-#include<iostream>
+/*Return maximum value of f(i, j) in an array, f(i, j) is defined 
+as |A[i] - A[j]| + |i - j|*/
 
+#include<iostream>
 using namespace std;
 
 int absoluteDiff(int *arr,int n){
