@@ -1,3 +1,6 @@
+/*Given, height of n contiguous buildings in an array, compute the total vol of water that can be trapped over all the buildings, if it rains. 
+*/
+
 #include<iostream>
 
 using namespace std;
