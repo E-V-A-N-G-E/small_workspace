@@ -13,21 +13,20 @@ int * nextPermute(int arr[],unsigned int n){
             break;
         }
     }
-    if(i!=0){    
-        for(i;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[j]>arr[i]){
-                    midmax=arr[j];
-                    arr[j]=arr[i];
-                    arr[i]=midmax;
-                }
+    
+    for(i;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[j]<arr[i]){
+                midmax=arr[j];
+                arr[j]=arr[i];
+                arr[i]=midmax;
             }
         }
     }
     return arr;
 }
 int main(){
-    int arr[] = {1, 2, 10, 6, 7, 8};
+    int arr[] = {5,4,3,2,1};
     unsigned int n = sizeof(arr)/sizeof(arr[0]);
     int * p=nextPermute(arr, n);
     for(int i=0;i<n;i++){
