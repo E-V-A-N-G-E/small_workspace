@@ -3,7 +3,6 @@ using namespace std;
 
 void makeMatrix(int A){
     int mat[A][A];
-    //int ** p= mat;
     int cnt=1;
     int start=0;
     int end=A-1;
@@ -35,16 +34,9 @@ void makeMatrix(int A){
         }
         cout<<endl;
     }
-    //return p;
 }
 
 int main(){
     int A=3;
     makeMatrix(A);
-    /*for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cout<<(*((*p+i)+j))<<" ";
-        }
-        cout<<endl;
-    }*/
 }
