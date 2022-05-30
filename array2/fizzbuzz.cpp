@@ -7,8 +7,12 @@ string arr[10];
 
 void setString(){
     for (int i=1;i<=n;i++){
-        if(i%3==0){
-            arr[i-1] ="Fizz ";
+        if(i%3==0 && i%5==0){
+            arr[i-1] ="FizzBuzz ";
+            continue;
+        }
+        else if(i%3 ==0){
+            arr[i-1]="Fizz ";
             continue;
         }
         else if(i%5==0){

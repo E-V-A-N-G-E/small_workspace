@@ -25,7 +25,7 @@ using namespace std;
 int * rearrange(int *arr,int n){
     int i=0;
     for(i=0;i<n;i++){
-        arr[i]+=arr[i]+(arr[i]%n)*n;
+        arr[i]=arr[i]+(arr[arr[i]]%n)*n;
     }
     for(i=0;i<n;i++){
         arr[i]/=n;
