@@ -16,6 +16,15 @@ Output Format
 Return a single integer — the number of the day of the week, when you will finish
  reading the newspaper. The days of the week are numbered starting with one in 
  the order: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+
+ Example Input
+A = 100, B = [15, 20, 20, 15, 10, 30, 45]
+
+Example Output
+6
+
+Problem Constraints
+1 <= A <= 1000 0 <= B[i] <= 1000 
 */
 #include<iostream>
 
