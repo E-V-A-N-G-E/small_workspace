@@ -42,6 +42,6 @@ int main(){
     sort(A,A+s,greater<int>());
     vector<int>v;
     for(int i=0;i<s;i++){
-        cout<<A[i]<<" ";
+        v.push_back()
     }
 }

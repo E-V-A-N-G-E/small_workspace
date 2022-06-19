@@ -50,8 +50,6 @@ string colTitle(int a){
 }
 int main(){
     int a=28;
-    int b=1.9;
-    cout<<b;
     string ans=colTitle(a);
     cout<<ans;
 }
