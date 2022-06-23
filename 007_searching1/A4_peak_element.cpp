@@ -35,12 +35,8 @@ int peakElement(int *arr, int s){
     int mid;
     while(low<=high){
         mid=low+(high-low)/2;
-        if(mid==s-1 && arr[s-1]>arr[mid-1])
-            return arr[s-1];
-        else if(mid==0 && arr[0]>arr[1])
-            return arr[0];
-        else if(arr[mid]>arr[mid+1] && arr[mid]>arr[mid-1])
-            return arr[mid];
+        if((mid==s-1 || arr[mid]>arr[mid+1])&&( mid==0 || arr[mid]>arr[mid-1]))
+            return mid;
         else if(arr[mid]<arr[mid+1]){
             low=mid+1;
         }
@@ -51,7 +47,7 @@ int peakElement(int *arr, int s){
 }
 
 int main(){
-    int arr[]={1,2,3,4,5};
+    int arr[]={1,2};
     int s=sizeof(arr)/sizeof(arr[0]);
     int ans=peakElement(arr,s);
     cout<<ans;

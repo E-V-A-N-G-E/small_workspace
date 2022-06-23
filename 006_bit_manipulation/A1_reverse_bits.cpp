@@ -31,7 +31,7 @@ using namespace std;
 
 int main(){
     unsigned int a=3;
-    unsigned int ans=0;
+    bitset<32>ans=0;
     for(int i=0;i<32;i++){
         ans<<=1;
         if(a&1==1){

@@ -35,6 +35,7 @@ using namespace std;
 
 string interestingArray(int *arr,int s){
     int odd=0;
+    int even=0;
     for(int i=0;i<s;i++){
         if(arr[i]%2!=0)
             odd++;
@@ -45,7 +46,7 @@ string interestingArray(int *arr,int s){
     return "NO";
 }
 int main(){
-    int arr[]={9,17,13};
+    int arr[]={2,4};
     int s=sizeof(arr)/sizeof(arr[0]);
     string str=interestingArray(arr,s);
     cout<<str;
