@@ -6,14 +6,7 @@ char dest='B';
 char aux='C';
 
 void printsteps(int n,char source,char aux,char dest){
-    if(n==1){
-        cout<<"moving 1 from "<<source<<" to "<<dest<<endl;
-        return;
-    }
-    else if(n==2){
-        cout<<"moving 1 from "<<source<<" to "<<aux<<endl;
-        cout<<"moving 2 from "<<source<<" to "<<dest<<endl;
-        cout<<"moving 1 from "<<aux<<" to "<<dest<<endl;
+    if(n==0){
         return;
     }
     else{
