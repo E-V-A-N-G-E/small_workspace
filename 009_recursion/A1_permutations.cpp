@@ -10,7 +10,7 @@ void permute(string s,int pos,int n){
         return;
     }
     else{
-        for(int i=pos;i<n-1;i++){
+        for(int i=pos;i<n;i++){
             swap(s[pos],s[i]);
             permute(s,pos+1,n);
             swap(s[pos],s[i]);

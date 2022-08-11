@@ -59,7 +59,6 @@ int isPresent(int num){
     int mid=0;
     int i=0,j=0;
     while(low<=high){
-        cout<<"in ";
         mid=low+(high-low)/2;
         i=mid/n;
         j=mid%n;

@@ -58,7 +58,12 @@ vector<vector<string>> solveNQueens(int A)
 }
 int main(){
     int n=4;
-    for(auto i=res.begin();i<res.end();i++){
-        cout<<i;
+    solveNQueens(n);
+    for(int i=0;i<res.size();i++){
+        for(int j=0;j<res[0].size();j++){
+            cout<<res[i][j];
+        }
+        cout<<endl;
     }
+    cout<<endl<<res.size()<<" "<<res[0].size();
 }
